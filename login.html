@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Style Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    
+    <!-- Login Button to Open Modal -->
+    <button class="login-btn" onclick="openLoginModal()">Login</button>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <!-- Left Side (Promo) -->
+            <div class="modal-left">
+                <div class="text-container">
+                    <h2>Login</h2>
+                    <p>Get access to your Orders, Wishlist, and Recommendations.</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="Login Promo" class="promo-img">
+                </div>
+            </div>
+
+            <!-- Right Side (Form) -->
+            <div class="modal-right">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <form id="loginForm">
+                    <input type="text" id="mobileOrEmail" placeholder="Enter Mobile number or Email" required>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                        <button type="button" class="toggle-password" onclick="togglePasswordVisibility('password')">👁️</button>
+                    </div>
+                    <p class="terms-text">By continuing, you agree to Flipkart’s Terms of Use and Privacy Policy.</p>
+                    <button type="submit" class="login-btn">Login</button>
+                    <p class="new-user">New to Flipkart? <a href="#" onclick="openCreateAccountModal()">Create an account</a></p>
+                    <p class="forgot-password"><a href="#" onclick="openForgotPasswordModal()">Forgot Password?</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Account Modal -->
+    <div id="createAccountModal" class="modal">
+        <div class="modal-content">
+            <!-- Left Side (Promo) -->
+            <div class="modal-left">
+                <div class="text-container">
+                    <h2>Looks like you're new here!</h2>
+                    <p>Sign up with your mobile number to get started</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="Create Account Promo" class="promo-img">
+                </div>
+            </div>
+
+            <!-- Right Side (Form) -->
+            <div class="modal-right">
+                <span class="close" onclick="closeCreateAccountModal()">&times;</span>
+                <form id="createAccountForm">
+                    <input type="text" id="name" placeholder="Enter Name" required>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                    <input type="text" id="phone" placeholder="Enter Phone Number" required>
+                    <div class="password-container">
+                        <input type="password" id="createPassword" placeholder="Enter Password" required>
+                        <button type="button" class="toggle-password" onclick="togglePasswordVisibility('createPassword')">👁️</button>
+                    </div>
+                    <button type="submit" class="create-account-btn">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <!-- Left Side (Promo) -->
+            <div class="modal-left">
+                <div class="text-container">
+                    <h2>Forgot Password</h2>
+                    <p>Enter your details to reset your password.</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="Forgot Password Promo" class="promo-img">
+                </div>
+            </div>
+
+            <!-- Right Side (Form) -->
+            <div class="modal-right">
+                <span class="close" onclick="closeForgotPasswordModal()">&times;</span>
+                <form id="forgotPasswordForm">
+                    <input type="text" id="forgotName" placeholder="Enter Name" required>
+                    <input type="text" id="forgotMobileOrEmail" placeholder="Enter Mobile number or Email" required>
+                    <div class="password-container">
+                        <input type="password" id="newPassword" placeholder="Enter New Password" required>
+                        <button type="button" class="toggle-password" onclick="togglePasswordVisibility('newPassword')">👁️</button>
+                    </div>
+                    <button type="submit" class="reset-password-btn">Reset Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
