@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2874f0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+header nav .logo img {
+    width: 150px;
+}
+
+header nav .nav-links {
+    margin-top: 10px;
+}
+
+header nav .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.order-success {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+}
+
+.success-message h1 {
+    color: #28a745;
+    font-size: 28px;
+}
+
+.success-message p {
+    color: #555;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.order-details {
+    margin-top: 30px;
+    text-align: left;
+    color: #555;
+}
+
+.order-details h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.order-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.order-details li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-continue-shopping {
+    background-color: #ff9f00;
+}
+
+.btn-continue-shopping:hover {
+    background-color: #ff7a00;
+}
+
+.btn-view-order {
+    background-color: #2874f0;
+}
+
+.btn-view-order:hover {
+    background-color: #005cbf;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2874f0;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
