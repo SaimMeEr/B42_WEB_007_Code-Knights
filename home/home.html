@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Flipkart Clone</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body {
+         margin: 0;
+         font-family: Arial, sans-serif;
+         background-color: #f5f5f5be;
+     }
+
+     .navbar {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         background-color: white;
+         padding: 10px 50px;
+         margin-bottom: 15px;
+     }
+
+     .logo img {
+         height: 40px;
+     }
+
+     .search-bar {
+         flex-grow: 1;
+         margin: 0 20px;
+     }
+
+     .search-bar input {
+         width: 90%;
+         padding: 10px;
+         border: none;
+         border-radius: 4px;
+         font-size: 16px;
+         background-color: #f0f5ff;
+         outline: none;
+     }
+
+     .navbar div {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         color: black;
+         font-size: 14px;
+         cursor: pointer;
+     }
+
+     .navbar img {
+         height: 24px;
+     }
+
+     .header-category {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: white;
+       padding: 15px 10px;
+       border-bottom: 1px solid #ddd;
+     }
+
+     .category-item {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       font-size: 14px;
+       font-weight: bold;
+       color: #333;
+     }
+
+     .category-item img {
+       width: 50px;
+       height: 50px;
+       object-fit: contain;
+       margin-bottom: 5px;
+     }
+
+
+     /* .product-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 20px;
+         gap: 20px;
+     }
+
+     .product-card {
+         border: 1px solid #ddd;
+         padding: 10px;
+         width: 200px;
+         text-align: center;
+         border-radius: 5px;
+         background: #fff;
+     }
+
+     .product-card img {
+         width: 100%;
+         height: auto;
+     } */
+
+     .footerSection {
+         
+        display: flex; 
+        max-width: auto;
+         /* height: 346px; */
+         height: 300px;
+         background-color: #212121;
+
+     }
+
+     .footerLeft {
+         display: flex;
+         width: 50%;
+         margin-left: 65px;
+         justify-content: space-evenly;
+     }
+
+     .footerInfo {
+         width: 252px;
+         height: 194px;
+         padding-top: 40px;
+     }
+
+     .footerInfoHeading {
+         color: #878787;
+         font-size: 12px;
+         font-weight: 400;
+         margin-bottom: 9px;
+     }
+
+     .footerContent {
+         color: #ffffff;
+         font-size: 10px;
+         font-weight: bold;
+         line-height: 2;
+     }
+
+     .footerRight {
+         display: flex;
+         width: 50%;
+         margin-right: 30px;
+         justify-content: space-evenly;
+     }
+
+     .footerExtras {
+         margin-top: 0.35px;
+         background-color: #212121;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         max-width: 1719px;
+         height: 70px;
+         color: #ffffff;
+         font-size: 14px;
+         line-height: 2;
+         padding-left: 25px;
+         padding-right: 10px;
+     }
+ </style>
+</head>
+<body>
+    <!-- Navbar section -->
+    <section> 
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt=""  >
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more">
+            </div>
+            <div>
+                <a href="../login.html"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt=""></a>
+                <span style="margin-right: 8px;"><a href="../login.html" style="text-decoration: none; color: black;">Login</a></span>
+            </div>
+            <div>
+                <a href="../cart/cart.html"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt=""></a>
+                <span><a href="../cart/cart.html" style="text-decoration: none; color: black;">Cart</a></span>
+            </div>
+            <div>
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="">
+                <span>Become a Seller</span>
+            </div>
+        </nav>
+    </section>
+
+    
+    <!-- Category Hearder -->
+
+    <div class="header-category">
+        <div class="category-item">
+          <img src="https://rukminim1.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+          <span><a href="#smartphone" style="text-decoration: none; color: #212121;">Mobiles</a></span>
+        </div>
+        <div class="category-item">
+            <img src="https://img.freepik.com/free-vector/smart-watch-white-background_1268-98.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Mobiles">
+            <span><a href="#smartwatchs" style="text-decoration: none; color: #212121;">SmartWatches</a></span>
+          </div>
+        <div class="category-item">
+          <img src="https://www.atulhost.com/wp-content/uploads/2024/07/best-laptop-brands.jpg" alt="Electronics">
+          <span><a href="#Electronics" style="text-decoration: none; color: #212121;" >Electronics</a></span>
+        </div>
+        <div class="category-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/0139228b2f7eb413.jpg?q=100" alt="Appliances">
+          <span><a href="#appliances" style="text-decoration: none; color: #212121;">Appliances</a></span>
+        </div>
+      </div>
+
+    <div class="home-container">
+        <!-- Product Categories Section -->
+        <div class="category-section">
+            <h2 >Smartphones</h2>
+            <div class="product-list" id="smartphone">
+                <!-- Smartphone Products -->
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/smartphone-sale-social-media-post-square-banner-template_589963-163.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid  " alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹1,20,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=120999&image=https://img.freepik.com/premium-vector/smartphone-sale-social-media-post-square-banner-template_589963-163.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid  ">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/mobile-phone-mock-up_1095-203.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹50,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=50999&image=https://img.freepik.com/free-vector/mobile-phone-mock-up_1095-203.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹79,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=79999&image=https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/display-template-with-mobile-phones_79603-1245.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹89,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=89999&image=https://img.freepik.com/free-vector/display-template-with-mobile-phones_79603-1245.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/display-template-with-smartphones_79603-1239.jpg?t=st=1739004283~exp=1739007883~hmac=79de4e05b0bf30afe9f6a795f41e6bb5f4519ff4ba2479645abb13bc3e3002ad&w=826" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹20,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=20999&image=https://img.freepik.com/free-vector/display-template-with-smartphones_79603-1239.jpg?t=st=1739004283~exp=1739007883~hmac=79de4e05b0bf30afe9f6a795f41e6bb5f4519ff4ba2479645abb13bc3e3002ad&w=826">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/realistic-3d-advert-with-smartphone_79603-1255.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹14,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=14999&image=https://img.freepik.com/free-vector/realistic-3d-advert-with-smartphone_79603-1255.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/product-design-social-media-advertising_987701-54.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹22,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=22999&image=https://img.freepik.com/premium-vector/product-design-social-media-advertising_987701-54.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/level-fast-charging-smartphone-wireless-charging-design-style-black-background_102875-17.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹25,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=25999&image=https://img.freepik.com/premium-vector/level-fast-charging-smartphone-wireless-charging-design-style-black-background_102875-17.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <!-- Add more smartphone products similarly -->
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2>Laptops</h2>
+            <div class="product-list" id="Electronics">
+                <!-- Laptop Products -->
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/laptop-computer-with-gradient-screen-with-vector-design_670547-451.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹45,000</p>
+                    <a href="../product/product.html?name=Laptop&price=45000&image=https://img.freepik.com/premium-vector/laptop-computer-with-gradient-screen-with-vector-design_670547-451.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/laptop-turquoise-background_1045-419.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹50,000</p>
+                    <a href="../product/product.html?name=Laptop&price=50000&image=https://img.freepik.com/free-vector/laptop-turquoise-background_1045-419.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/two-laptops_196637-134.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹45,000</p>
+                    <a href="../product/product.html?name=Laptop&price=45000&image=https://img.freepik.com/premium-vector/two-laptops_196637-134.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/sophisticated-computer-yellow-background_1045-422.jpg?ga=GA1.1.799011163.1739003864   " alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹80,000</p>
+                    <a href="../product/product.html?name=Laptop&price=80000&image=https://img.freepik.com/free-vector/sophisticated-computer-yellow-background_1045-422.jpg?ga=GA1.1.799011163.1739003864   ">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/online-radio-music-streaming-service-concept-with-laptops-headphones-playlists_68258-241.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹60,000</p>
+                    <a href="../product/product.html?name=Laptop&price=60000&image=https://img.freepik.com/premium-vector/online-radio-music-streaming-service-concept-with-laptops-headphones-playlists_68258-241.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/black-laptop-mockup_1318093-11064.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹50,000</p>
+                    <a href="../product/product.html?name=Laptop&price=50000&image=https://img.freepik.com/premium-vector/black-laptop-mockup_1318093-11064.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/laptop-mause-isolated-illustration_454641-338.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹70,000</p>
+                    <a href="../product/product.html?name=Laptop&price=70000&image=https://img.freepik.com/premium-vector/laptop-mause-isolated-illustration_454641-338.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/branding-web-template_23-2147510186.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹90,000</p>
+                    <a href="../product/product.html?name=Laptop&price=90000&image=https://img.freepik.com/free-vector/branding-web-template_23-2147510186.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <!-- Add more laptop products similarly -->
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2>Home Appliances</h2>
+            <div class="product-list" id="appliances">
+                <!-- Home Appliance Products -->
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-vector/washing-machine_88188-252.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Home Appliance">
+                    <h3>Washing Machine</h3>
+                    <p>₹25,000</p>
+                    <a href="../product/product.html?name=WashingMachine&price=25000&image=https://img.freepik.com/premium-vector/washing-machine_88188-252.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/washing-machine-realistic-poster-with-quiet-quick-wash-symbols-illustration_1284-29131.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Home Appliance">
+                    <h3>Washing Machine</h3>
+                    <p>₹30,000</p>
+                    <a href="../product/product.html?name=WashingMachine&price=30000&image=https://img.freepik.com/free-vector/washing-machine-realistic-poster-with-quiet-quick-wash-symbols-illustration_1284-29131.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://media.gettyimages.com/id/136848238/photo/washing-machine.jpg?s=612x612&w=0&k=20&c=UzbSSc-v1he8nwkXOiiv1cKQI04rwM2BOgvAtRrPTnY=" alt="Home Appliance">
+                    <h3>Washing Machine</h3>
+                    <p>₹35,000</p>
+                    <a href="../product/product.html?name=WashingMachine&price=35000&image=https://media.gettyimages.com/id/136848238/photo/washing-machine.jpg?s=612x612&w=0&k=20&c=UzbSSc-v1he8nwkXOiiv1cKQI04rwM2BOgvAtRrPTnY=">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://thumbs.dreamstime.com/b/stunning-photorealistic-d-rendering-modern-washing-machine-isolated-detailed-product-photography-showcase-353348048.jpg" alt="Home Appliance">
+                    <h3>Washing Machine</h3>
+                    <p>₹40,000</p>
+                    <a href="../product/product.html?name=WashingMachine&price=40000&image=https://thumbs.dreamstime.com/b/stunning-photorealistic-d-rendering-modern-washing-machine-isolated-detailed-product-photography-showcase-353348048.jpg">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhtro4zFhyswBBxC4G3h4IeZZxpLbKDO8ww&s" alt="Home Appliance">
+                    <h3>Refrigerator</h3>
+                    <p>₹35,000</p>
+                    <a href="../product/product.html?name=Refrigerator&price=35000&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhtro4zFhyswBBxC4G3h4IeZZxpLbKDO8ww&s">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJl2g5xElj_76fpDvhShkkrw7GKMPoJ5VrKg&s" alt="Home Appliance">
+                    <h3>Refrigerator</h3>
+                    <p>₹40,000</p>
+                    <a href="../product/product.html?name=Refrigerator&price=40000&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJl2g5xElj_76fpDvhShkkrw7GKMPoJ5VrKg&s">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBtE_Q8coNlP9ozCBkLUkiQQrkI_Lqnck2Jg&s" alt="Home Appliance">
+                    <h3>Refrigerator</h3>
+                    <p>₹40,000</p>
+                    <a href="../product/product.html?name=Refrigerator&price=40000&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBtE_Q8coNlP9ozCBkLUkiQQrkI_Lqnck2Jg&s">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7g9lhIh6G23VmT7n320ewBzNf0U_xLJT_Q&s" alt="Home Appliance">
+                    <h3>Refrigerator</h3>
+                    <p>₹50,000</p>
+                    <a href="../product/product.html?name=Refrigerator&price=50000&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7g9lhIh6G23VmT7n320ewBzNf0U_xLJT_Q&s">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-photo/metal-food-blender-close-up-with-fresh-exotic-tropic-fruits-it-kitchen-background-with-empty-space-blender-wooden-table-kitchen_639032-170.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Home Appliance">
+                    <h3>Juicer Mixer Grinder</h3>
+                    <p>₹2,000</p>
+                    <a href="../product/product.html?name=Juicer Mixer Grinder&price=2000&image=https://img.freepik.com/free-photo/metal-food-blender-close-up-with-fresh-exotic-tropic-fruits-it-kitchen-background-with-empty-space-blender-wooden-table-kitchen_639032-170.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-photo/electric-blender-make-fruit-juice-smoothie-kitchen-table-concept-healthy-diet_639032-174.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Home Appliance">
+                    <h3>Juicer Mixer Grinder </h3>
+                    <p>₹1,500</p>
+                    <a href="../product/product.html?name=Juicer Mixer Grinder&price=1500&image=https://img.freepik.com/free-photo/electric-blender-make-fruit-juice-smoothie-kitchen-table-concept-healthy-diet_639032-174.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/modern-food-processor-with-juicer-plate-with-apples-kitchen-table_508659-7667.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Home Appliance">
+                    <h3>Juicer Mixer Grinder</h3>
+                    <p>₹2,500</p>
+                    <a href="../product/product.html?name=Juicer Mixer Grinder&price=2500&image=https://img.freepik.com/premium-photo/modern-food-processor-with-juicer-plate-with-apples-kitchen-table_508659-7667.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/food-processor-isolated-white-surface_311158-2602.jpg?w=996" alt="Home Appliance">
+                    <h3>Juicer Mixer Grinder</h3>
+                    <p>₹3,000</p>
+                    <a href="../product/product.html?name=Juicer Mixer Grinder&price=3000&image=https://img.freepik.com/premium-photo/food-processor-isolated-white-surface_311158-2602.jpg?w=996">View Details</a>
+                </div>
+                <!-- Add more home appliance products similarly -->
+            </div>
+        </div>
+
+        <!-- smartwatch -->
+
+        <div class="category-section">
+            <h2>Smart Wearables</h2>
+            <div class="product-list" id="smartwatchs">
+                <!-- Smart Wearables Products -->
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/smart-watch-realistic-image-black_1284-11873.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹2,000</p>
+                    <a href="../product/product.html?name=Smartwatch&price=2000&image=https://img.freepik.com/free-vector/smart-watch-realistic-image-black_1284-11873.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-psd/digital-smart-watch-icon-isolated-3d-render-illustration_47987-8201.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹2,500</p>
+                    <a href="../product/product.html?name=Smartwatch&price=2500&image=https://img.freepik.com/free-psd/digital-smart-watch-icon-isolated-3d-render-illustration_47987-8201.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/wallpaper-watch_686659-121.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹3,000</p>
+                    <a href="../product/product.html?name=Smartwatch&price=3000&image=https://img.freepik.com/premium-photo/wallpaper-watch_686659-121.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/white-apple-watch-white-stand-with-black-screen_978921-22351.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹5,000</p>
+                    <a href="../product/product.html?name=Smartwatch&price=5000&image=https://img.freepik.com/premium-photo/white-apple-watch-white-stand-with-black-screen_978921-22351.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/smart-fitness-tracker-isolated-white-morning-light-background-sport-bracelet-fitness-band-run-tracker-black-fitness-watch_69064-1662.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹1,500</p>
+                    <a href="../product/product.html?name=Smartwatch&price=1500&image=https://img.freepik.com/premium-photo/smart-fitness-tracker-isolated-white-morning-light-background-sport-bracelet-fitness-band-run-tracker-black-fitness-watch_69064-1662.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/smartwatch-front-side_23-2147498802.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹3,000</p>
+                    <a href="../product/product.html?name=Smartwatch&price=3000&image=https://img.freepik.com/free-vector/smartwatch-front-side_23-2147498802.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/two-black-white-modern-smart-watch-with-straps-white-background-3d-rendering_476612-18619.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹2,500</p>
+                    <a href="../product/product.html?name=Smartwatch&price=2500&image=https://img.freepik.com/premium-photo/two-black-white-modern-smart-watch-with-straps-white-background-3d-rendering_476612-18619.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/yellow-smartwatch-earphones-case-gray-background_93675-99497.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>₹5,000</p>
+                    <a href="../product/product.html?name=Smartwatch&price=5000&image=https://img.freepik.com/premium-photo/yellow-smartwatch-earphones-case-gray-background_93675-99497.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Selling Section -->
+        <div class="category-section">
+            <h2>Top Selling</h2>
+            <div class="product-list">
+                <!-- Top Selling Products -->
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>₹82,999</p>
+                    <a href="../product/product.html?name=Smartphone&price=82999&image=https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/sophisticated-computer-yellow-background_1045-422.jpg?ga=GA1.1.799011163.1739003864" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>₹50,000</p>
+                    <a href="../product/product.html?name=Laptop2&price=50000&image=https://img.freepik.com/free-vector/sophisticated-computer-yellow-background_1045-422.jpg?ga=GA1.1.799011163.1739003864">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/yellow-smartwatch-earphones-case-gray-background_93675-99497.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Laptop">
+                    <h3>Smartwatch</h3>
+                    <p>₹2,500</p>
+                    <a href="../product/product.html?name=Smartwatch&price=2500&image=https://img.freepik.com/premium-photo/yellow-smartwatch-earphones-case-gray-background_93675-99497.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-photo/still-life-tech-device_23-2150722637.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid" alt="Laptop">
+                    <h3>Bluetooth Speaker</h3>
+                    <p>₹2,000</p>
+                    <a href="../product/product.html?name=Bluetooth Speaker&price=2500&image=https://img.freepik.com/free-photo/still-life-tech-device_23-2150722637.jpg?ga=GA1.1.799011163.1739003864&semt=ais_hybrid">View Details</a>
+                </div>
+                <!-- Add more top-selling products similarly -->
+            </div>
+        </div>
+
+        <!-- Add more categories similarly like "Books", "Clothing", etc. -->
+    </div>
+
+    <footer>
+        <div class="footerSection">
+    
+            <div class="footerLeft">
+      
+              <div class="footerInfo">
+                <p class="footerInfoHeading">ABOUT</p>
+                <div class="footerContent">
+                  <p>Contact Us</p>
+                  <p>About Us</p>
+                  <p>Careers</p>
+                  <p>Flipkart Stories</p>
+                  <p>Press</p>
+                  <p>Corporate Information</p>
+                </div>
+              </div>
+  
+              <div class="footerInfo">
+                <p class="footerInfoHeading">GROUP COMPANIES</p>
+                <div class="footerContent">
+                  <p>Myntra</p>
+                  <p>Cleartrip</p>
+                  <p>Shopsy</p>
+                </div>
+              </div>
+      
+              <div class="footerInfo">
+                <p class="footerInfoHeading">HELP</p>
+                <div class="footerContent">
+                  <p>Payments</p>
+                  <p>Shipping</p>
+                  <p>Cancellation & Returns</p>
+                  <p>FAQ</p>
+                </div>
+              </div>
+      
+              <div class="footerInfo">
+                <p class="footerInfoHeading">CONSUMER POLICY</p>
+                <div class="footerContent">
+                  <p>Cancellation & Returns</p>
+                  <p>Terms Of Use</p>
+                  <p>Security</p>
+                  <p>Privacy</p>
+                  <p>Sitemap</p>
+                  <p>Grievance Redressal</p>
+                  <p>EPR Compliance</p>
+                </div>
+              </div>
+      
+            </div>
+  
+            
+      
+      
+            <div class="footerRight">
+      
+              <div class="footerInfo">
+      
+                <p class="footerInfoHeading">Mail Us:</p>
+                <div class="footerContent">
+                  <p>Flipkart Internet Private Limited,</p>
+                  <p>Buildings Alyssa, Begonia &</p>
+                  <p>Clove Embassy Tech Village,</p>
+                  <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                  <p>Bengaluru, 560103,</p>
+                  <p>Karnataka, India</p>
+                </div>
+                <p style="color: #ffffff; font-size: 9px;">Social</p>
+              </div>
+      
+              <div class="footerInfo">
+                <p class="footerInfoHeading">Registered Office Address:</p>
+                <div class="footerContent">
+                  <p>Flipkart Internet Private Limited,</p>
+                  <p>Buildings Alyssa, Begonia &</p>
+                  <p>Clove Embassy Tech Village,</p>
+                  <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                  <p>Bengaluru, 560103,</p>
+                  <p>Karnataka, India</p>
+                  <p>CIN : U51109KA2012PTC066107</p>
+                  <p >Telephone:<p style="color: rgb(12, 109, 236);">044-45614700/ 044-45614800</p></p>
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+      
+      
+          <div class="footerExtras">
+            <span><i class="fa-solid fa-suitcase" style="color: #ffe500;"></i> Become a Seller</span>
+            <span><i class="fa-solid fa-star" style="color: #ffe500;"></i> Advertise</span>
+            <span><i class="fa-solid fa-gift" style="color: #ffe500;"></i> Gift Cards</span>
+            <span><i class="fa-solid fa-circle-question" style="color: #ffe500;"></i> Help Center</span>
+            <span>© 2007-2025 Flipkart.com</span>
+            <span><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="payment-method"></span>
+      
+          </div>
+    </footer>
+    
+    <!-- <script src="scriptS.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+/* header {
+    background-color: #2874f0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+} */
+
+/* Main Home Container */
+.home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Category Sections */
+.category-section {
+    margin-bottom: 40px;
+}
+
+/* Category Title */
+.category-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Top Selling Section Styling */
+.category-section h2:nth-of-type(4) {
+    color: #ff5722; /* Color for Top Selling Section */
+    border-bottom: 2px solid #ff5722; /* Underline effect for Top Selling */
+    padding-bottom: 10px;
+}
+
+/* Product List Grid */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Item Styling */
+.product-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Product Details */
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 15px;
+    font-weight: normal;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #2874f0;
+    margin: 0 15px;
+}
+
+.product-item a {
+    display: inline-block;
+    background-color: #2874f0;
+    color: white;
+    padding: 10px;
+    margin: 0 15px 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.product-item a:hover {
+    background-color: #ff5722;
+}
+
+/* Product Card Hover Effect */
+.product-item:hover .product-item img {
+    opacity: 0.8;
+}
+
+/* Footer Section (Optional) */
+/* footer {
+    background-color: #2874f0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+} */
+ 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .nav-links {
+        margin-top: 10px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .category-section h2 {
+        font-size: 24px;
+    }
+
+    .product-item h3 {
+        font-size: 16px;
+    }
+}
