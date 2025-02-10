@@ -16,9 +16,7 @@ Frontend: https://clever-beignet-6ce12f.netlify.app/
 
 [Video Walkthrough Link](https://video-link.whatever)
 
-## Video Walkthrough of the Codebase
-
-[Codebase Walkthrough Link](https://video-link.whatever)
+https://drive.google.com/file/d/1ntqPGfCpPYWklg4bC-f1ePtzM9qoz1DL/view?usp=sharing
 
 ## Features
 
