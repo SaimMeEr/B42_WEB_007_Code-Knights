@@ -48,7 +48,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (userData && (userData.email === mobileOrEmail || userData.phone === mobileOrEmail) && userData.password === password) {
         alert(`Welcome, ${userData.name}!`);
-        window.location.href = "home/index.html";
+        window.location.href = "index.html";
         closeLoginModal();
     } else {
         alert('Email or phone not registered. Please create an account.');
